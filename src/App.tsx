@@ -14,6 +14,7 @@ import { Navbar } from './components/layout/Navbar';
 import { ObservatoryView } from './components/observatory/ObservatoryView';
 import { AnomalyInjectorModal } from './components/observatory/AnomalyInjectorModal';
 import { PhasePreviewCard } from './components/layout/PhasePreviewCard';
+import { BathymetryView } from './components/bathymetry/BathymetryView';
 
 export const App: React.FC = () => {
   // Current Active Station
@@ -243,6 +244,8 @@ export const App: React.FC = () => {
             onClearStress={handleClearStress}
             onClearLogs={() => setLogs([])}
           />
+        ) : activeTab === 'bathymetry' ? (
+          <BathymetryView station={activeStation} snapshot={snapshot} simulation={simulation} />
         ) : (
           <PhasePreviewCard
             tab={activeTab}
