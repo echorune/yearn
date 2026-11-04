@@ -101,8 +101,3 @@ yearn/
         ├── restoration/    # Intervention lab & projection models (Phase 4)
         └── ledger/         # Taxa index & Blue Carbon exporter (Phase 5)
 ```
-
----
-
-## 📄 License
-Proprietary Oceanic Research Software. All rights reserved.
